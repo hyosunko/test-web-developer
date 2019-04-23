@@ -1,0 +1,134 @@
+Special :
+
+font-size: 14px;
+line-height: 24px;
+color: #ffffff;
+font-family: "Open Sans";
+font-weight: 600;
+text-align: right;
+
+Rectangle 3
+width: 181px;
+height: 100px;
+background-color: #00a7df;
+
+contact us/our work
+font-size: 14px;
+line-height: 24px;
+color: #343e48;
+font-family: "Open Sans";
+font-weight: 600;
+text-align: right;
+
+hover
+color: #00a7e0;
+
+Home
+font-size: 14px;
+line-height: 24px;
+color: #343e48;
+font-family: "Open Sans";
+font-weight: 600;
+text-align: right;
+
+bottom border
+width: 1398px;
+height: 1px;
+background-color: #bec2c5;
+
+body text
+width: 916px;
+height: 532px;
+font-size: 30px;
+line-height: 24px;
+color: #00a7e0;
+font-family: "Open Sans";
+font-weight: 700;
+
+title description
+font-size: 20px;
+line-height: 24px;
+color: #ffffff;
+font-family: "Open Sans";
+font-weight: 700;
+text-align: center;
+
+hover
+width: 276px;
+height: 182px;
+background-color: #5fa3bb;
+
+gallery right
+width: 277px;
+height: 184px;
+background-color: #e4e2e2;
+border: 1px solid #00a7e0;
+
+bottom grey color
+width: 986px;
+height: 7px;
+background-color: #f4f4f4;
+
+
+hide top border
+width: 1006px;
+height: 18px;
+background-color: #ffffff;
+
+border
+width: 988px;
+height: 619px;
+background-color: #e4e2e2;
+border: 1px solid #e4e2e2;
+
+sidebar
+Subnav heading
+font-size: 14px;
+letter-spacing: 1px;
+line-height: 24px;
+color: #343e48;
+font-family: "Open Sans";
+font-weight: 600;
+
+triangle
+width: 12px;
+height: 6px;
+background-color: #e4e2e2;
+
+subnav-1
+width: 293px;
+height: 47px;
+border-radius: 10px;
+background-color: #e4e2e2;
+
+bullet
+width: 7px;
+height: 7px;
+border-radius: 4px;
+background-color: #00a7e0;
+
+text link1
+font-size: 16px;
+line-height: 24px;
+color: #343e48;
+font-family: "Open Sans";
+font-weight: 400;
+
+related link
+subnav heading
+rectagle 2
+width: 977px;
+height: 722px;
+background-color: #e4e2e2;
+
+width: 976px;
+height: 675px;
+background-color: #e4e2e2;
+
+related link
+font-size: 14px;
+letter-spacing: 1px;
+line-height: 24px;
+color: #343e48;
+font-family: "Open Sans";
+font-weight: 600;
