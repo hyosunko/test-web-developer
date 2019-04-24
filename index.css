@@ -1,3 +1,8 @@
+body{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2vh;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -13,25 +18,59 @@ nav {
   border: 1px solid black;
 }
 
+.logo img{
+  max-width: 100%;
+  height: auto;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 70vw;
   padding-right: 2vw;
+  border: 1px solid green;
 }
-.nav-links li {
+
+.nav-items{
+  height: 10vh;
+  width: 300px;
+  border: 1px solid red;
+}
+
+.nav-items:last-child{
+  background-color: #00a7df;
+  transform: skewX(150deg);
+}
+
+.nav-links div li {
   list-style: none;
-  border: 1px solid black;
+  font-style: normal;
 }
-.nav-links a {
+
+/* .nav-links div li:last-child{
+  color: #fff;
+  background-color: #00a7df;
+  transform: skewX(150deg)
+} */
+
+.nav-links div li a {
   color: #000;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.8em;
+  font-style: normal;
 }
+
+/* .nav-links  div li:last-child a{
+  color: #fff;
+  background-color: #00a7df;
+  transform: skewX(150deg)
+} */
+
 .nav-links :hover {
   color: #00a7df;
 }
+
 
 .burger {
   display: none;
@@ -73,6 +112,9 @@ nav {
   .burger {
     display: block;
   }
+  .main-section {
+    min-height: 100vh;
+  }
 }
 
 .nav-active {
@@ -99,18 +141,36 @@ nav {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
-
-.navbar-left {
-  position: fixed;
-  min-width: 15vw;
-  top: 8vh;
-  left: 0;
-  width: 20vw;
-  height: 92vh;
-  border: 1px solid black;
+.main-section {
+  min-height: 100%;
+}
+.main-section div div{
+  width: 280px;
+  height: 180px;
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  overflow: hidden;
+  /* margin: 1vh 0px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.main-section div div .image {
+  border: 1px solid #00a7df;
+}
+.main-section div div .image img {
+  max-width: 120%;
 }
 
-.main-section {
-  position: absolute;
-  margin-left: 20vw;
+@keyframes textOverImage {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

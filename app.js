@@ -39,8 +39,52 @@ const navSlide = () => {
   // Animate Links
 };
 
-navSlide();
+const displayText = () =>{
+  const items = document.querySelectorAll(".image")
+  items.forEach((item, index)=>{
+    const x = item.innerHTML;
+    item.addEventListener("mouseover", ()=>{
+      const {heading, description} = images[item.getAttribute('id')]
+      console.log(heading, description)
+      item.innerHTML = `${heading} \n ${description}` 
+    })
+    item.addEventListener("mouseout", ()=>{
+      const {heading, description} = images[item.getAttribute('id')]
+      console.log(item)
+      item.innerHTML = x
+    })
+  })
+}
+// const displayText = () =>{
+//   const items = document.querySelectorAll(".image");
+
+//   items.addEventListener("click", () =>{
+
+//       console.log(items)
+//       // document.getElementById(images[item]).setAttribute("style", "display:block;"))
+//   });
+  
+//   // items.addEventListener("mouseout", ()=>{
+//   //   document.getElementById(images[item]).setAttribute("style", "display:none")
+//   // });
+// }
+
+// function func()
+// {   
+//    document.getElementById("text").setAttribute("style", "display:block;")
+// }
+
+// function func1()
+// {  
+//     document.getElementById("text").setAttribute("style", "display:none;")
+// }
+
 
 // const app = () => {
 //   navSlide();
+//   displayText();
+//   test();
 // };
+
+navSlide();
+displayText();
