@@ -29,62 +29,39 @@ const navSlide = () => {
       if (link.style.animation) {
         link.style.animation = "";
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 4 +
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 +
           0.5}s`;
       }
     });
     // burger animation
     burger.classList.toggle("toggle");
   });
-  // Animate Links
 };
 
-const displayText = () =>{
-  const items = document.querySelectorAll(".image")
-  items.forEach((item, index)=>{
-    const x = item.innerHTML;
-    item.addEventListener("mouseover", ()=>{
-      const {heading, description} = images[item.getAttribute('id')]
-      console.log(heading, description)
-      item.innerHTML = `${heading} \n ${description}` 
-    })
-    item.addEventListener("mouseout", ()=>{
-      const {heading, description} = images[item.getAttribute('id')]
-      console.log(item)
-      item.innerHTML = x
-    })
-  })
-}
-// const displayText = () =>{
-//   const items = document.querySelectorAll(".image");
+const displayText = () => {
+  const items = document.querySelectorAll(".image");
 
-//   items.addEventListener("click", () =>{
+  items.forEach(item => {
+    const { heading, description } = images[item.getAttribute("id")];
 
-//       console.log(items)
-//       // document.getElementById(images[item]).setAttribute("style", "display:block;"))
-//   });
-  
-//   // items.addEventListener("mouseout", ()=>{
-//   //   document.getElementById(images[item]).setAttribute("style", "display:none")
-//   // });
-// }
+    const textDiv = document.createElement("div");
+    const headingEl = document.createElement("h4");
+    const descriptionEl = document.createElement("span");
+    const textContainerDiv = document.createElement("div");
 
-// function func()
-// {   
-//    document.getElementById("text").setAttribute("style", "display:block;")
-// }
+    headingEl.innerHTML = heading;
+    descriptionEl.innerHTML = description;
 
-// function func1()
-// {  
-//     document.getElementById("text").setAttribute("style", "display:none;")
-// }
+    textContainerDiv.appendChild(headingEl);
+    textContainerDiv.appendChild(descriptionEl);
+    textContainerDiv.className = "display-text-container";
 
+    textDiv.appendChild(textContainerDiv);
+    textDiv.className = "display-text";
 
-// const app = () => {
-//   navSlide();
-//   displayText();
-//   test();
-// };
+    item.appendChild(textDiv);
+  });
+};
 
 navSlide();
 displayText();
